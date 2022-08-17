@@ -1,1 +1,1 @@
-# janus_docker
+docker run -dit -p 8088-8089:8088-8089 -p 443:443 -p 10000-10200:10000-10200/udp janus
