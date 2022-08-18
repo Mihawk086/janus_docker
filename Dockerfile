@@ -58,7 +58,7 @@ RUN cd /home/janus && \
 	git clone https://github.com/meetecho/janus-gateway.git && \
 	cd janus-gateway && \
 	sh autogen.sh && \
-	./configure --enable-post-processing --prefix=/opt/janus && \
+	CFLAGS="-g" ./configure --enable-post-processing --prefix=/opt/janus && \
 	make && \
 	make install && \
 	make configs
